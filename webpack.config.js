@@ -62,7 +62,10 @@ module.exports = (env, argv) => {
       filename: "[name].[contenthash].js",
     },
     plugins: [
-      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/), // cache|flairs|emotes
+      new webpack.IgnorePlugin({
+  resourceRegExp: /^\.\/locale$/,
+  contextRegExp: /moment$/
+}),
       new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: [
           "**",
