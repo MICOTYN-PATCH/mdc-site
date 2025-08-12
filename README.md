@@ -1,4 +1,6 @@
-# www.micotyn.com
+# www.micotyn.com site source code
+
+forked from https://github.com/destinygg/website
 
 See [LICENSE.md](LICENSE.md)
 
